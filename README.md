@@ -1,8 +1,4 @@
 # recon-toolkit
-Enumeration wrapper
-
-
-# recon-toolkit
 
 An OSCP-style enumeration wrapper. It runs an initial full-port `nmap`
 sweep, parses the open ports, and fires off per-service follow-up
