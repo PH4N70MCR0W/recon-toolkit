@@ -20,11 +20,13 @@ a tool where I can explain every line, not a black box.
 
 Results are written to `enum_<target>/`, organised per category:
 
+```
 enum_10.10.10.10/
-├── nmap/ # raw scan output (all-ports, service/version)
-├── web/ # whatweb + feroxbuster per HTTP(S) port
-├── smb/ # enum4linux-ng + share listing
-└── misc/ # notes and TODOs for unhandled services
+├── nmap/     # raw scan output
+├── web/      # whatweb + feroxbuster per HTTP(S) port
+├── smb/      # enum4linux-ng + share listing
+└── misc/     # notes and TODOs
+```
 
 
 ## What it does
