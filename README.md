@@ -10,19 +10,27 @@ a tool where I can explain every line, not a black box.
 
 ## Usage
 
+Two implementations are provided — same workflow, pick whichever you prefer:
+
 ```bash
-./enum.sh <target-ip>
+./enum.sh <target-ip>     # Bash version, minimal dependencies
+./enum.py <target-ip>     # Python version, XML parsing, easier to extend
+```
+
+If the scripts aren't executable yet, run them directly instead:
+
+```bash
+bash enum.sh <target-ip>
+python3 enum.py <target-ip>
 ```
 
 Results are written to `enum_<target>/`, organised per category:
 
-```
 enum_10.10.10.10/
-├── nmap/     # raw scan output
-├── web/      # whatweb + feroxbuster per HTTP(S) port
-├── smb/      # enum4linux-ng + share listing
-└── misc/     # notes and TODOs
-```
+├── nmap/ # raw scan output
+├── web/ # whatweb + feroxbuster per HTTP(S) port
+├── smb/ # enum4linux-ng + share listing
+└── misc/ # notes and TODOs
 
 
 ## What it does
