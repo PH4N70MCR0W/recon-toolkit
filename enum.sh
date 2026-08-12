@@ -1,4 +1,3 @@
-cat > enum.sh <<'EOF'
 #!/usr/bin/env bash
 # Simple OSCP-style enumeration wrapper.
 # Runs an initial nmap sweep, parses open ports, and fires
@@ -66,5 +65,3 @@ done
 
 wait
 echo "[+] Done. Review $OUTDIR/"
-EOF
-chmod +x enum.sh
